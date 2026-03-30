@@ -1,5 +1,6 @@
 import { EventFormData } from '../../../types/events';
 import { capitalize } from '../../../lib/utils';
+import { datetimeLocalToUtcIso } from '../../../lib/dates';
 
 export function buildEventDescription(data: EventFormData): string {
   const parts: string[] = [];
@@ -70,12 +71,13 @@ export function buildEventTags(data: EventFormData): string[] {
 }
 
 export function buildEventPayload(data: EventFormData, deviceId: string, phaseId: string | null) {
+  const observedAtIso = datetimeLocalToUtcIso(data.observedAt);
   return {
     device_id: deviceId,
     phase_id: phaseId,
     event_type: data.eventType,
     description: buildEventDescription(data),
-    observed_at: data.observedAt,
+    observed_at: observedAtIso,
     intensity: data.intensity || null,
     tags: buildEventTags(data)
   };

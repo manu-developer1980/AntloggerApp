@@ -6,7 +6,7 @@ import { resolveActiveDevice } from '../features/phases/utils/phaseUtils';
 import { useEvents, useUpdateEvent } from '../features/events/api/eventQueries';
 import { EventFilters } from '../types/events';
 import { EventType } from '../types/db';
-import { formatDate, formatTime } from '../lib/dates';
+import { datetimeLocalToUtcIso, formatDate, formatTime, utcIsoToDatetimeLocal } from '../lib/dates';
 import { cn } from '../lib/utils';
 
 export function HistoryPage() {
@@ -43,18 +43,12 @@ export function HistoryPage() {
     return events.find((e) => e.id === editingEventId) ?? null;
   }, [events, editingEventId]);
 
-  const toDatetimeLocal = (isoString: string) => {
-    const d = new Date(isoString);
-    const pad = (n: number) => String(n).padStart(2, '0');
-    return `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())}T${pad(d.getHours())}:${pad(d.getMinutes())}`;
-  };
-
   const openEditorForEvent = (eventId: string) => {
     const target = events?.find((e) => e.id === eventId);
     if (!target) return;
 
     setEditingEventId(eventId);
-    setEditObservedAt(toDatetimeLocal(target.observed_at));
+    setEditObservedAt(utcIsoToDatetimeLocal(target.observed_at));
     setEditEventType(target.event_type);
     setEditDescription(target.description);
     setEditIntensity(target.intensity ?? '');
@@ -112,7 +106,7 @@ export function HistoryPage() {
       await updateEvent({
         id: editingEventId,
         event_type: editEventType,
-        observed_at: new Date(editObservedAt).toISOString(),
+        observed_at: datetimeLocalToUtcIso(editObservedAt),
         description: editDescription.trim(),
         intensity: editIntensity === '' ? null : Number(editIntensity),
         tags: tags.length > 0 ? tags : null,

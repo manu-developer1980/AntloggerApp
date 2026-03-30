@@ -44,12 +44,15 @@ export function useEvents(deviceId: string | null, filters?: EventFilters) {
         .select("*")
         .eq("device_id", deviceId);
 
+      const toUtcStartIso = (dateStr: string) => `${dateStr}T00:00:00.000Z`;
+      const toUtcEndIso = (dateStr: string) => `${dateStr}T23:59:59.999Z`;
+
       // Apply filters
       if (filters?.startDate) {
-        query = query.gte("observed_at", filters.startDate);
+        query = query.gte("observed_at", toUtcStartIso(filters.startDate));
       }
       if (filters?.endDate) {
-        query = query.lte("observed_at", filters.endDate);
+        query = query.lte("observed_at", toUtcEndIso(filters.endDate));
       }
       if (filters?.eventType) {
         query = query.eq("event_type", filters.eventType);

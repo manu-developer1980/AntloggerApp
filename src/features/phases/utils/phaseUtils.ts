@@ -26,6 +26,8 @@ export async function resolvePhaseForDate(
   observedAt: string,
 ): Promise<string | null> {
   try {
+    const observedDate = observedAt.includes('T') ? observedAt.split('T')[0] : observedAt;
+
     // First, try to find an active phase
     const { data: activePhase, error: activeError } = (await supabase
       .from("colony_phases")
@@ -43,8 +45,8 @@ export async function resolvePhaseForDate(
       .from("colony_phases")
       .select("id")
       .eq("device_id", deviceId)
-      .lte("start_date", observedAt)
-      .or(`end_date.is.null,end_date.gte.${observedAt}`)
+      .lte("start_date", observedDate)
+      .or(`end_date.is.null,end_date.gte.${observedDate}`)
       .limit(1)
       .single()) as { data: { id: string } | null; error: any };
 
