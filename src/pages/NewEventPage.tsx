@@ -2,7 +2,21 @@ import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useForm, Controller } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
-import { ArrowLeft, Clock, Save, Zap } from 'lucide-react';
+import {
+  ArrowLeft,
+  Brush,
+  Circle,
+  Droplet,
+  Mountain,
+  Package,
+  PlusCircle,
+  Repeat,
+  Search,
+  Sprout,
+  Wrench,
+  Save,
+  Zap,
+} from 'lucide-react';
 import { toast } from 'sonner';
 import { EventFormData } from '../types/events';
 import { eventFormSchema } from '../features/events/schemas/eventSchema';
@@ -115,7 +129,23 @@ export function NewEventPage() {
                 )}
               >
                 <div className="flex items-center">
-                  <span className="text-lg mr-2">{preset.icon}</span>
+                  {(() => {
+                    const iconMap = {
+                      search: Search,
+                      circle: Circle,
+                      package: Package,
+                      seedling: Sprout,
+                      broom: Brush,
+                      mountain: Mountain,
+                      'plus-circle': PlusCircle,
+                      wrench: Wrench,
+                      replace: Repeat,
+                      droplet: Droplet,
+                    } as const;
+
+                    const Icon = iconMap[preset.icon as keyof typeof iconMap] ?? Zap;
+                    return <Icon className="w-5 h-5 mr-2 text-gray-200" />;
+                  })()}
                   <span className="text-sm font-medium">{preset.name}</span>
                 </div>
               </button>
