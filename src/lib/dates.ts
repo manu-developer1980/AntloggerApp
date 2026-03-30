@@ -1,9 +1,11 @@
-import { parseISO } from 'date-fns';
+import { format } from 'date-fns';
 
 const pad2 = (n: number) => String(n).padStart(2, '0');
 
-const toDate = (date: string | Date): Date => {
-  return typeof date === 'string' ? parseISO(date) : date;
+const extractIsoDateTime = (value: string): { date: string; time: string } | null => {
+  const m = value.match(/^(\d{4}-\d{2}-\d{2})[T\s](\d{2}:\d{2})/);
+  if (!m) return null;
+  return { date: m[1], time: m[2] };
 };
 
 export const datetimeLocalToUtcIso = (value: string): string => {
@@ -21,7 +23,10 @@ export const datetimeLocalToUtcIso = (value: string): string => {
 };
 
 export const utcIsoToDatetimeLocal = (value: string): string => {
-  const d = toDate(value);
+  const parts = extractIsoDateTime(value);
+  if (parts) return `${parts.date}T${parts.time}`;
+
+  const d = new Date(value);
   return `${d.getUTCFullYear()}-${pad2(d.getUTCMonth() + 1)}-${pad2(d.getUTCDate())}T${pad2(d.getUTCHours())}:${pad2(d.getUTCMinutes())}`;
 };
 
@@ -30,12 +35,24 @@ export const formatDateTime = (date: string | Date): string => {
 };
 
 export const formatTime = (date: string | Date): string => {
-  const d = toDate(date);
+  if (typeof date === 'string') {
+    const parts = extractIsoDateTime(date);
+    if (parts) return parts.time;
+  }
+
+  const d = typeof date === 'string' ? new Date(date) : date;
   return `${pad2(d.getUTCHours())}:${pad2(d.getUTCMinutes())}`;
 };
 
 export const formatDate = (date: string | Date): string => {
-  const d = toDate(date);
+  if (typeof date === 'string') {
+    const parts = extractIsoDateTime(date);
+    if (parts) return parts.date;
+    const m = date.match(/^(\d{4}-\d{2}-\d{2})/);
+    if (m) return m[1];
+  }
+
+  const d = typeof date === 'string' ? new Date(date) : date;
   return `${d.getUTCFullYear()}-${pad2(d.getUTCMonth() + 1)}-${pad2(d.getUTCDate())}`;
 };
 
@@ -47,16 +64,12 @@ export const getTodayDateRange = () => {
 };
 
 export const isDateToday = (date: string | Date): boolean => {
-  const d = toDate(date);
+  const day = formatDate(date);
   const now = new Date();
-  return (
-    d.getUTCFullYear() === now.getUTCFullYear() &&
-    d.getUTCMonth() === now.getUTCMonth() &&
-    d.getUTCDate() === now.getUTCDate()
-  );
+  const today = `${now.getUTCFullYear()}-${pad2(now.getUTCMonth() + 1)}-${pad2(now.getUTCDate())}`;
+  return day === today;
 };
 
 export const getCurrentDateTime = (): string => {
-  const now = new Date();
-  return `${now.getUTCFullYear()}-${pad2(now.getUTCMonth() + 1)}-${pad2(now.getUTCDate())}T${pad2(now.getUTCHours())}:${pad2(now.getUTCMinutes())}`;
+  return format(new Date(), "yyyy-MM-dd'T'HH:mm");
 };
