@@ -83,11 +83,11 @@ export function useCreateEvent() {
 
   return useMutation({
     mutationFn: async (event: Omit<ColonyEvent, "id" | "created_at">) => {
-      const { data, error } = (await supabase
+      const { data, error } = await supabase
         .from("colony_events")
-        .insert(event as any)
+        .insert(event)
         .select()
-        .single()) as { data: ColonyEvent; error: any };
+        .single();
 
       if (error) throw error;
       return data as ColonyEvent;
@@ -107,14 +107,12 @@ export function useUpdateEvent() {
       id,
       ...event
     }: Partial<ColonyEvent> & { id: string }) => {
-      const query = supabase
+      const { data, error } = await supabase
         .from("colony_events")
-        .update(event as any)
+        .update(event)
         .eq("id", id)
         .select()
-        .single() as unknown as Promise<{ data: ColonyEvent; error: any }>;
-
-      const { data, error } = await query;
+        .single();
 
       if (error) throw error;
       return data as ColonyEvent;
