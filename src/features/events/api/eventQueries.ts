@@ -109,7 +109,7 @@ export function useUpdateEvent() {
     }: Partial<ColonyEvent> & { id: string }) => {
       const query = supabase
         .from("colony_events")
-        .update(event)
+        .update(event as any)
         .eq("id", id)
         .select()
         .single() as unknown as Promise<{ data: ColonyEvent; error: any }>;
