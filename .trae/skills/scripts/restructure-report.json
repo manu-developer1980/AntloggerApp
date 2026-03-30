@@ -1,0 +1,423 @@
+{
+  "rootDir": "/Users/manqui/Downloads/TRAE-Skills-main",
+  "processed": [
+    {
+      "original": "architecture/Authentication_Strategy_Selection.md",
+      "newDir": "architecture/Authentication_Strategy_Selection",
+      "newFile": "architecture/Authentication_Strategy_Selection/SKILL.md"
+    },
+    {
+      "original": "architecture/BFF_Pattern_Implementation.md",
+      "newDir": "architecture/BFF_Pattern_Implementation",
+      "newFile": "architecture/BFF_Pattern_Implementation/SKILL.md"
+    },
+    {
+      "original": "architecture/Database_Selection_SQL_vs_NoSQL.md",
+      "newDir": "architecture/Database_Selection_SQL_vs_NoSQL",
+      "newFile": "architecture/Database_Selection_SQL_vs_NoSQL/SKILL.md"
+    },
+    {
+      "original": "architecture/Event_Driven_Architecture_Basics.md",
+      "newDir": "architecture/Event_Driven_Architecture_Basics",
+      "newFile": "architecture/Event_Driven_Architecture_Basics/SKILL.md"
+    },
+    {
+      "original": "architecture/Frontend_Backend_Communication_Patterns.md",
+      "newDir": "architecture/Frontend_Backend_Communication_Patterns",
+      "newFile": "architecture/Frontend_Backend_Communication_Patterns/SKILL.md"
+    },
+    {
+      "original": "architecture/Microservices_vs_Monolith_Decision.md",
+      "newDir": "architecture/Microservices_vs_Monolith_Decision",
+      "newFile": "architecture/Microservices_vs_Monolith_Decision/SKILL.md"
+    },
+    {
+      "original": "architecture/Multi_Tenancy_Architecture.md",
+      "newDir": "architecture/Multi_Tenancy_Architecture",
+      "newFile": "architecture/Multi_Tenancy_Architecture/SKILL.md"
+    },
+    {
+      "original": "architecture/REST_vs_GraphQL_Selection.md",
+      "newDir": "architecture/REST_vs_GraphQL_Selection",
+      "newFile": "architecture/REST_vs_GraphQL_Selection/SKILL.md"
+    },
+    {
+      "original": "architecture/SSR_vs_CSR_Decision_Matrix.md",
+      "newDir": "architecture/SSR_vs_CSR_Decision_Matrix",
+      "newFile": "architecture/SSR_vs_CSR_Decision_Matrix/SKILL.md"
+    },
+    {
+      "original": "architecture/Scaling_Strategies_Horizontal_vs_Vertical.md",
+      "newDir": "architecture/Scaling_Strategies_Horizontal_vs_Vertical",
+      "newFile": "architecture/Scaling_Strategies_Horizontal_vs_Vertical/SKILL.md"
+    },
+    {
+      "original": "architecture/Serverless_Architecture_Considerations.md",
+      "newDir": "architecture/Serverless_Architecture_Considerations",
+      "newFile": "architecture/Serverless_Architecture_Considerations/SKILL.md"
+    },
+    {
+      "original": "architecture/Stack_Selection_Criteria.md",
+      "newDir": "architecture/Stack_Selection_Criteria",
+      "newFile": "architecture/Stack_Selection_Criteria/SKILL.md"
+    },
+    {
+      "original": "backend/API_REST_Endpoint_Design.md",
+      "newDir": "backend/API_REST_Endpoint_Design",
+      "newFile": "backend/API_REST_Endpoint_Design/SKILL.md"
+    },
+    {
+      "original": "backend/Caching_Strategy_Redis.md",
+      "newDir": "backend/Caching_Strategy_Redis",
+      "newFile": "backend/Caching_Strategy_Redis/SKILL.md"
+    },
+    {
+      "original": "backend/Database_Schema_Migration.md",
+      "newDir": "backend/Database_Schema_Migration",
+      "newFile": "backend/Database_Schema_Migration/SKILL.md"
+    },
+    {
+      "original": "backend/Database_Seeding.md",
+      "newDir": "backend/Database_Seeding",
+      "newFile": "backend/Database_Seeding/SKILL.md"
+    },
+    {
+      "original": "backend/Error_Handling_Express.md",
+      "newDir": "backend/Error_Handling_Express",
+      "newFile": "backend/Error_Handling_Express/SKILL.md"
+    },
+    {
+      "original": "backend/Express_Middleware_Creation.md",
+      "newDir": "backend/Express_Middleware_Creation",
+      "newFile": "backend/Express_Middleware_Creation/SKILL.md"
+    },
+    {
+      "original": "backend/Feature_Flag_Implementation.md",
+      "newDir": "backend/Feature_Flag_Implementation",
+      "newFile": "backend/Feature_Flag_Implementation/SKILL.md"
+    },
+    {
+      "original": "backend/File_Upload_Handling.md",
+      "newDir": "backend/File_Upload_Handling",
+      "newFile": "backend/File_Upload_Handling/SKILL.md"
+    },
+    {
+      "original": "backend/GraphQL_Schema_Design.md",
+      "newDir": "backend/GraphQL_Schema_Design",
+      "newFile": "backend/GraphQL_Schema_Design/SKILL.md"
+    },
+    {
+      "original": "backend/Health_Check_Endpoint.md",
+      "newDir": "backend/Health_Check_Endpoint",
+      "newFile": "backend/Health_Check_Endpoint/SKILL.md"
+    },
+    {
+      "original": "backend/Logger_Configuration_Winston.md",
+      "newDir": "backend/Logger_Configuration_Winston",
+      "newFile": "backend/Logger_Configuration_Winston/SKILL.md"
+    },
+    {
+      "original": "backend/Message_Queue_Implementation.md",
+      "newDir": "backend/Message_Queue_Implementation",
+      "newFile": "backend/Message_Queue_Implementation/SKILL.md"
+    },
+    {
+      "original": "backend/Microservice_Communication.md",
+      "newDir": "backend/Microservice_Communication",
+      "newFile": "backend/Microservice_Communication/SKILL.md"
+    },
+    {
+      "original": "backend/Pagination_Implementation.md",
+      "newDir": "backend/Pagination_Implementation",
+      "newFile": "backend/Pagination_Implementation/SKILL.md"
+    },
+    {
+      "original": "backend/Refactoring_Legacy_Controller.md",
+      "newDir": "backend/Refactoring_Legacy_Controller",
+      "newFile": "backend/Refactoring_Legacy_Controller/SKILL.md"
+    },
+    {
+      "original": "backend/SQL_Query_Optimization.md",
+      "newDir": "backend/SQL_Query_Optimization",
+      "newFile": "backend/SQL_Query_Optimization/SKILL.md"
+    },
+    {
+      "original": "backend/Soft_Delete_Implementation.md",
+      "newDir": "backend/Soft_Delete_Implementation",
+      "newFile": "backend/Soft_Delete_Implementation/SKILL.md"
+    },
+    {
+      "original": "backend/Swagger_Documentation.md",
+      "newDir": "backend/Swagger_Documentation",
+      "newFile": "backend/Swagger_Documentation/SKILL.md"
+    },
+    {
+      "original": "backend/Transaction_Management.md",
+      "newDir": "backend/Transaction_Management",
+      "newFile": "backend/Transaction_Management/SKILL.md"
+    },
+    {
+      "original": "backend/WebSocket_Implementation.md",
+      "newDir": "backend/WebSocket_Implementation",
+      "newFile": "backend/WebSocket_Implementation/SKILL.md"
+    },
+    {
+      "original": "code_management/Branch_Protection_Rules.md",
+      "newDir": "code_management/Branch_Protection_Rules",
+      "newFile": "code_management/Branch_Protection_Rules/SKILL.md"
+    },
+    {
+      "original": "code_management/Code_Review_Guidelines.md",
+      "newDir": "code_management/Code_Review_Guidelines",
+      "newFile": "code_management/Code_Review_Guidelines/SKILL.md"
+    },
+    {
+      "original": "code_management/Dead_Code_Elimination.md",
+      "newDir": "code_management/Dead_Code_Elimination",
+      "newFile": "code_management/Dead_Code_Elimination/SKILL.md"
+    },
+    {
+      "original": "code_management/ESLint_Prettier_Setup.md",
+      "newDir": "code_management/ESLint_Prettier_Setup",
+      "newFile": "code_management/ESLint_Prettier_Setup/SKILL.md"
+    },
+    {
+      "original": "code_management/Git_Commit_Convention_Conventional_Commits.md",
+      "newDir": "code_management/Git_Commit_Convention_Conventional_Commits",
+      "newFile": "code_management/Git_Commit_Convention_Conventional_Commits/SKILL.md"
+    },
+    {
+      "original": "code_management/Git_Hooks_Husky.md",
+      "newDir": "code_management/Git_Hooks_Husky",
+      "newFile": "code_management/Git_Hooks_Husky/SKILL.md"
+    },
+    {
+      "original": "code_management/Managing_Technical_Debt.md",
+      "newDir": "code_management/Managing_Technical_Debt",
+      "newFile": "code_management/Managing_Technical_Debt/SKILL.md"
+    },
+    {
+      "original": "code_management/Monorepo_Setup_Turborepo.md",
+      "newDir": "code_management/Monorepo_Setup_Turborepo",
+      "newFile": "code_management/Monorepo_Setup_Turborepo/SKILL.md"
+    },
+    {
+      "original": "code_management/Npm_Scripts_Automation.md",
+      "newDir": "code_management/Npm_Scripts_Automation",
+      "newFile": "code_management/Npm_Scripts_Automation/SKILL.md"
+    },
+    {
+      "original": "code_management/Semantic_Versioning_Strategy.md",
+      "newDir": "code_management/Semantic_Versioning_Strategy",
+      "newFile": "code_management/Semantic_Versioning_Strategy/SKILL.md"
+    },
+    {
+      "original": "devops/AWS_Secrets_Manager_Integration.md",
+      "newDir": "devops/AWS_Secrets_Manager_Integration",
+      "newFile": "devops/AWS_Secrets_Manager_Integration/SKILL.md"
+    },
+    {
+      "original": "devops/Automated_Database_Backups.md",
+      "newDir": "devops/Automated_Database_Backups",
+      "newFile": "devops/Automated_Database_Backups/SKILL.md"
+    },
+    {
+      "original": "devops/Blue_Green_Deployment_Strategy.md",
+      "newDir": "devops/Blue_Green_Deployment_Strategy",
+      "newFile": "devops/Blue_Green_Deployment_Strategy/SKILL.md"
+    },
+    {
+      "original": "devops/CI_Pipeline_GitHub_Actions.md",
+      "newDir": "devops/CI_Pipeline_GitHub_Actions",
+      "newFile": "devops/CI_Pipeline_GitHub_Actions/SKILL.md"
+    },
+    {
+      "original": "devops/Dependency_Update_Audit.md",
+      "newDir": "devops/Dependency_Update_Audit",
+      "newFile": "devops/Dependency_Update_Audit/SKILL.md"
+    },
+    {
+      "original": "devops/Docker_Containerization_Node.md",
+      "newDir": "devops/Docker_Containerization_Node",
+      "newFile": "devops/Docker_Containerization_Node/SKILL.md"
+    },
+    {
+      "original": "devops/Git_Branching_Strategy.md",
+      "newDir": "devops/Git_Branching_Strategy",
+      "newFile": "devops/Git_Branching_Strategy/SKILL.md"
+    },
+    {
+      "original": "devops/Infrastructure_as_Code_Terraform.md",
+      "newDir": "devops/Infrastructure_as_Code_Terraform",
+      "newFile": "devops/Infrastructure_as_Code_Terraform/SKILL.md"
+    },
+    {
+      "original": "devops/Kubernetes_Deployment_Manifests.md",
+      "newDir": "devops/Kubernetes_Deployment_Manifests",
+      "newFile": "devops/Kubernetes_Deployment_Manifests/SKILL.md"
+    },
+    {
+      "original": "devops/Log_Aggregation_ELK.md",
+      "newDir": "devops/Log_Aggregation_ELK",
+      "newFile": "devops/Log_Aggregation_ELK/SKILL.md"
+    },
+    {
+      "original": "devops/Nginx_Reverse_Proxy_Setup.md",
+      "newDir": "devops/Nginx_Reverse_Proxy_Setup",
+      "newFile": "devops/Nginx_Reverse_Proxy_Setup/SKILL.md"
+    },
+    {
+      "original": "devops/Prometheus_Grafana_Monitoring.md",
+      "newDir": "devops/Prometheus_Grafana_Monitoring",
+      "newFile": "devops/Prometheus_Grafana_Monitoring/SKILL.md"
+    },
+    {
+      "original": "devops/SSL_TLS_Certbot_Setup.md",
+      "newDir": "devops/SSL_TLS_Certbot_Setup",
+      "newFile": "devops/SSL_TLS_Certbot_Setup/SKILL.md"
+    },
+    {
+      "original": "documentation/API_Documentation_Best_Practices.md",
+      "newDir": "documentation/API_Documentation_Best_Practices",
+      "newFile": "documentation/API_Documentation_Best_Practices/SKILL.md"
+    },
+    {
+      "original": "documentation/Architectural_Decision_Records_ADR.md",
+      "newDir": "documentation/Architectural_Decision_Records_ADR",
+      "newFile": "documentation/Architectural_Decision_Records_ADR/SKILL.md"
+    },
+    {
+      "original": "documentation/Changelog_Maintenance.md",
+      "newDir": "documentation/Changelog_Maintenance",
+      "newFile": "documentation/Changelog_Maintenance/SKILL.md"
+    },
+    {
+      "original": "documentation/Code_Comments_Best_Practices.md",
+      "newDir": "documentation/Code_Comments_Best_Practices",
+      "newFile": "documentation/Code_Comments_Best_Practices/SKILL.md"
+    },
+    {
+      "original": "documentation/Contributing_Guidelines_CONTRIBUTING.md",
+      "newDir": "documentation/Contributing_Guidelines_CONTRIBUTING",
+      "newFile": "documentation/Contributing_Guidelines_CONTRIBUTING/SKILL.md"
+    },
+    {
+      "original": "documentation/Project_Onboarding_Guide.md",
+      "newDir": "documentation/Project_Onboarding_Guide",
+      "newFile": "documentation/Project_Onboarding_Guide/SKILL.md"
+    },
+    {
+      "original": "documentation/User_Manual_Creation.md",
+      "newDir": "documentation/User_Manual_Creation",
+      "newFile": "documentation/User_Manual_Creation/SKILL.md"
+    },
+    {
+      "original": "documentation/Writing_Effective_README.md",
+      "newDir": "documentation/Writing_Effective_README",
+      "newFile": "documentation/Writing_Effective_README/SKILL.md"
+    },
+    {
+      "original": "frontend/API_Data_Fetching_TanStack.md",
+      "newDir": "frontend/API_Data_Fetching_TanStack",
+      "newFile": "frontend/API_Data_Fetching_TanStack/SKILL.md"
+    },
+    {
+      "original": "frontend/Accessibility_Audit.md",
+      "newDir": "frontend/Accessibility_Audit",
+      "newFile": "frontend/Accessibility_Audit/SKILL.md"
+    },
+    {
+      "original": "frontend/Custom_React_Hook_Creation.md",
+      "newDir": "frontend/Custom_React_Hook_Creation",
+      "newFile": "frontend/Custom_React_Hook_Creation/SKILL.md"
+    },
+    {
+      "original": "frontend/Form_Handling_ReactHookForm.md",
+      "newDir": "frontend/Form_Handling_ReactHookForm",
+      "newFile": "frontend/Form_Handling_ReactHookForm/SKILL.md"
+    },
+    {
+      "original": "frontend/Frontend_Error_Boundary.md",
+      "newDir": "frontend/Frontend_Error_Boundary",
+      "newFile": "frontend/Frontend_Error_Boundary/SKILL.md"
+    },
+    {
+      "original": "frontend/Global_State_Management_Redux.md",
+      "newDir": "frontend/Global_State_Management_Redux",
+      "newFile": "frontend/Global_State_Management_Redux/SKILL.md"
+    },
+    {
+      "original": "frontend/Internationalization_i18n.md",
+      "newDir": "frontend/Internationalization_i18n",
+      "newFile": "frontend/Internationalization_i18n/SKILL.md"
+    },
+    {
+      "original": "frontend/React_Component_Optimization.md",
+      "newDir": "frontend/React_Component_Optimization",
+      "newFile": "frontend/React_Component_Optimization/SKILL.md"
+    },
+    {
+      "original": "frontend/Responsive_UI_Design_Tailwind.md",
+      "newDir": "frontend/Responsive_UI_Design_Tailwind",
+      "newFile": "frontend/Responsive_UI_Design_Tailwind/SKILL.md"
+    },
+    {
+      "original": "frontend/Route_Protection_React_Router.md",
+      "newDir": "frontend/Route_Protection_React_Router",
+      "newFile": "frontend/Route_Protection_React_Router/SKILL.md"
+    },
+    {
+      "original": "security/Code_Review_Security.md",
+      "newDir": "security/Code_Review_Security",
+      "newFile": "security/Code_Review_Security/SKILL.md"
+    },
+    {
+      "original": "security/Input_Validation_Zod.md",
+      "newDir": "security/Input_Validation_Zod",
+      "newFile": "security/Input_Validation_Zod/SKILL.md"
+    },
+    {
+      "original": "security/JWT_Authentication.md",
+      "newDir": "security/JWT_Authentication",
+      "newFile": "security/JWT_Authentication/SKILL.md"
+    },
+    {
+      "original": "security/RBAC_Implementation.md",
+      "newDir": "security/RBAC_Implementation",
+      "newFile": "security/RBAC_Implementation/SKILL.md"
+    },
+    {
+      "original": "security/Rate_Limiting_Redis.md",
+      "newDir": "security/Rate_Limiting_Redis",
+      "newFile": "security/Rate_Limiting_Redis/SKILL.md"
+    },
+    {
+      "original": "security/Secure_Env_Var_Handling.md",
+      "newDir": "security/Secure_Env_Var_Handling",
+      "newFile": "security/Secure_Env_Var_Handling/SKILL.md"
+    },
+    {
+      "original": "testing/E2E_Testing_Playwright.md",
+      "newDir": "testing/E2E_Testing_Playwright",
+      "newFile": "testing/E2E_Testing_Playwright/SKILL.md"
+    },
+    {
+      "original": "testing/Unit_Test_Generation_Jest.md",
+      "newDir": "testing/Unit_Test_Generation_Jest",
+      "newFile": "testing/Unit_Test_Generation_Jest/SKILL.md"
+    }
+  ],
+  "skipped": [],
+  "updatedLinks": [],
+  "brokenLinks": [],
+  "errors": [
+    {
+      "file": "README.md",
+      "error": "Error: ENOENT: no such file or directory, open '/Users/manqui/Downloads/TRAE-Skills-main/README.md'"
+    },
+    {
+      "file": "README.md",
+      "error": "Error: ENOENT: no such file or directory, open '/Users/manqui/Downloads/TRAE-Skills-main/README.md'"
+    }
+  ]
+}
