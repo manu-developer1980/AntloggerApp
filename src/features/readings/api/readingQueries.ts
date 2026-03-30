@@ -1,10 +1,11 @@
 import { useQuery } from "@tanstack/react-query";
 import { supabase } from "../../../lib/supabase";
-import { LatestDeviceReading, Device } from "../../../types/db";
+import { LatestDeviceReading, Device, ColonyPhase } from "../../../types/db";
 
 const queryKeys = {
   latestReading: "latest-reading",
   device: "device",
+  activePhase: "active-phase",
 };
 
 export function useLatestReading(deviceId: string | null) {
@@ -49,6 +50,30 @@ export function useDevice(deviceId: string | null) {
       }
 
       return data as Device;
+    },
+    enabled: !!deviceId,
+  });
+}
+
+export function useActivePhase(deviceId: string | null) {
+  return useQuery({
+    queryKey: [queryKeys.activePhase, deviceId],
+    queryFn: async () => {
+      if (!deviceId) return null;
+
+      const { data, error } = await supabase
+        .from("colony_phases")
+        .select("*")
+        .eq("device_id", deviceId)
+        .eq("is_active", true)
+        .single();
+
+      if (error) {
+        console.warn("Error fetching active phase:", error);
+        return null;
+      }
+
+      return data as ColonyPhase;
     },
     enabled: !!deviceId,
   });

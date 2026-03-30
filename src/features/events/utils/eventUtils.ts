@@ -45,12 +45,24 @@ export function buildEventTags(data: EventFormData): string[] {
   }
   
   // Add activity-based tags
-  if (data.action === 'inspeccion' || data.action === 'exploracion') {
+  if (data.action === 'inspeccion') {
+    tags.push('inspeccion');
+  }
+  
+  if (data.action === 'exploracion') {
     tags.push('exploracion');
   }
   
-  if (data.action === 'reclutamiento' || data.action === 'patrulla') {
-    tags.push('actividad_social');
+  if (data.action === 'transporte') {
+    tags.push('transporte');
+  }
+  
+  if (data.action === 'excavacion') {
+    tags.push('excavacion');
+  }
+  
+  if (data.action === 'limpieza') {
+    tags.push('limpieza');
   }
   
   // Remove duplicates and return

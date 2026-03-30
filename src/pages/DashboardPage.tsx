@@ -6,6 +6,7 @@ import { resolveActiveDevice } from '../features/phases/utils/phaseUtils';
 import { getActivePhase } from '../features/phases/utils/phaseUtils';
 import { useLatestReading } from '../features/readings/api/readingQueries';
 import { useDevice } from '../features/readings/api/readingQueries';
+import { useActivePhase } from '../features/readings/api/readingQueries';
 import { useTodaysEvents } from '../features/events/api/eventQueries';
 import { formatTime } from '../lib/dates';
 import { formatTemperature, formatHumidity, formatPressure } from '../lib/utils';
@@ -46,7 +47,7 @@ export function DashboardPage() {
   }, []);
   
   const { data: device } = useDevice(deviceId);
-  const { data: activePhase } = getActivePhase(deviceId || '');
+  const { data: activePhase } = useActivePhase(deviceId);
   const { data: latestReading } = useLatestReading(deviceId);
   const { data: todaysEvents } = useTodaysEvents(deviceId);
   
