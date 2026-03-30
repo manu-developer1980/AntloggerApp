@@ -8,10 +8,10 @@ import {
   Gauge,
   Clock,
   AlertCircle,
+  Pencil,
 } from "lucide-react";
 import { toast } from "sonner";
 import { resolveActiveDevice } from "../features/phases/utils/phaseUtils";
-import { getActivePhase } from "../features/phases/utils/phaseUtils";
 import { useLatestReading } from "../features/readings/api/readingQueries";
 import { useDevice } from "../features/readings/api/readingQueries";
 import { useActivePhase } from "../features/readings/api/readingQueries";
@@ -232,6 +232,15 @@ export function DashboardPage() {
                             </div>
                           </div>
                         )}
+                      </div>
+                      <div className="ml-3 flex items-start">
+                        <Link
+                          to={`/history?edit=${event.id}`}
+                          className="p-2 rounded-lg bg-gray-600 hover:bg-gray-500 text-gray-200"
+                          aria-label="Editar evento"
+                        >
+                          <Pencil className="w-4 h-4" />
+                        </Link>
                       </div>
                     </div>
                   </div>
